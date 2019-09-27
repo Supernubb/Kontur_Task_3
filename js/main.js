@@ -1,4 +1,4 @@
-let soundLink = $("#sound-link")[0];
+const soundLink = $("#sound-link")[0];
 
     $(".workspace div").mouseenter(function () {
         soundLink.play();
@@ -11,7 +11,7 @@ let soundLink = $("#sound-link")[0];
 
     // popup
 
-    let popup = document.getElementById('mypopup'),
+    const popup = document.getElementById('mypopup'),
         popupClose = document.querySelector('.close');
         
         popupClose.onclick = function() {
