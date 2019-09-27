@@ -13,11 +13,7 @@ let soundLink = $("#sound-link")[0];
 
     let popup = document.getElementById('mypopup'),
         popupClose = document.querySelector('.close');
-
-        window.onload = function() {
-            popup.style.display = 'block';
-        }
-
+        
         popupClose.onclick = function() {
             popup.style.display = 'none';
         }

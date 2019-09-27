@@ -101,65 +101,10 @@
     transform: scale(3);
 }
 
-/* adaptation */
-
-@media (max-width: 1200px) {
-
-    body {
-        background-image: url(../img/background-main.jpg);
-    } 
-
-    .container {
-        width: 100%;
-        background-image: none;
-    }
-    
-
-    .workspace {
-        width: 90%;
-        flex-direction: row;
-    }
-
-    .workspace__item:hover {
-        background-size: 200%;
-    }
-
-    .workspace__item {
-        width: 100%;
-        margin: 0;
-        margin-top: 5%;
-        background-size: 200%;
-    }
-
-    .workspace__item_htmlbook {
-        font-size: 1.2rem;
-    }
-
-    .workspace__item_learn {
-        font-size: 1rem;
-    }
-
-    .workspace__item_cube {
-    background-repeat: no-repeat;
-    background-size: 160%;
-    margin-bottom: 5%;
-    }
-
-    #theImage { 
-        bottom: 300px;
-        left: -50px;
-        transform: scale(1);
-    }
-
-
-}
-
-/* adaptation close */
-
 /* popup */
 
 .popup {
-    display: none;
+    display: block;
     position: fixed;
     z-index: 1;
     left: 0;
@@ -212,3 +157,63 @@
 }
 
 /* popup close */
+
+/* adaptation */
+
+@media (max-width: 1200px) {
+
+    .popup-content {
+        width: 80%;
+    }
+
+    body {
+        background-image: url(../img/background-main.jpg);
+    } 
+
+    .container {
+        width: 100%;
+        background-image: none;
+    }
+    
+
+    .workspace {
+        width: 90%;
+        flex-direction: row;
+    }
+
+    .workspace__item:hover {
+        background-size: 200%;
+    }
+
+    .workspace__item {
+        width: 100%;
+        margin: 0;
+        margin-top: 5%;
+        background-size: 200%;
+    }
+
+    .workspace__item_htmlbook {
+        font-size: 1.2rem;
+    }
+
+    .workspace__item_learn {
+        font-size: 1rem;
+    }
+
+    .workspace__item_cube {
+    background-repeat: no-repeat;
+    background-size: 160%;
+    margin-bottom: 5%;
+    }
+
+    #theImage { 
+        bottom: 300px;
+        left: -50px;
+        transform: scale(1);
+    }
+
+
+}
+
+/* adaptation close */
+
